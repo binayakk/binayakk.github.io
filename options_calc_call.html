@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Market Today</title>
+        <meta charset="utf-8">
+		<link href="index.css" rel="stylesheet">
+		<link href="form.css" rel="stylesheet">
+    </head>
+	<img src = "stock_animation.gif" height="125" width="100%">
+	
+	<body>
+		<header>
+			<h1>Options Today</h1>
+		</header>
+
+		<div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Option Prices 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="options_calc_call.html">Cal. Call Option Price</a>
+                <a href="options_calc_put.html">Cal. Put Option Price</a>
+              </div>
+            </div> 
+			<a href = "contact.html">Contact</a>
+			<a href = "reference.html">References</a>
+		</div>
+		
+		<div class="container">
+		<form>
+			<label for ="STOCK_PR">Stock Price:</label><br>
+			<input type="number" value="" id="STOCK_PR" name="STOCK_PR"><br>
+
+			<label for ="STRIKE_PR">Strike Price:</label><br>
+			<input type="number" value="" id="STRIKE_PR" name="STRIKE_PR"><br>
+
+			<label for ="INTEREST_RATE">Interest Rate (0.5 for 50%):</label><br>
+			<input type="number" value="" id="INTEREST_RATE" name="INTEREST_RATE"><br>
+
+			<label for ="DIVIDENTS">Dividents Yield (0.5 for 50%):</label><br>
+			<input type="number" value="" id="DIVIDENTS" name="DIVIDENTS"><br>
+
+			<label for ="VOLATILITY">Annual Volatility (0.5 for 50%):</label><br>
+			<input type="number" value="" id="VOLATILITY" name="VOLATILITY"><br>
+
+			<label for ="DAYS">Expiration Days</label><br>
+			<input type="number" value="" id="DAYS" name="DAYS"><br>
+
+			<label for ="BSEURCALLPRICE">Black Scholes European Call</label><br>
+			<input type="number" value="" id="BSEURCALLPRICE" name="BSEURCALLPRICE"><br>
+
+			<input type="button" value="Calculate" onClick="calcBSCallOptionPrice(this.form)">
+			<input type="reset" value="Clear">
+		</form>
+		</div>
+
+
+		<script src="options_calc.js"></script>
+
+		<footer>
+			<small><i>Copyright &copy; 2020 Market and Options Today<br>
+			</i></small>
+		</footer>
+
+
+		
+	</body>
+
+
+</html>
+
+
+
+
+
+	    
+
+
+
+	    
+

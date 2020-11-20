@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Market Today</title>
+        <meta charset="utf-8">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <img src = "stock_animation.gif" height="125" width="100%">
+    <body>
+        <header>
+            <h1>Market Today</h1>
+        </header>
+
+
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+              <button class="dropbtn">Option Prices 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="options_calc_call.html">Cal. Call Option Price</a>
+                <a href="options_calc_put.html">Cal. Put Option Price</a>
+              </div>
+            </div> 
+            <a href = "contact.html">Contact</a>
+            <a href = "reference.html">References</a>
+        </div>
+        
+
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div id="tradingview_54392"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">Powered</span></a> by TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+            new TradingView.widget
+            (
+            {
+            "width": 980,
+            "height": 610,
+            "symbol": "FOREXCOM:DJI",
+            "interval": "D",
+            "timezone": "Etc/UTC",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "container_id": "tradingview_54392"
+            }
+            );
+            </script>
+        </div>
+  <!-- TradingView Widget END -->
+
+        <footer>
+          <small><i>Copyright &copy; 2020 Market and Options Today<br>
+          </i></small>
+        </footer>
+
+
+
+
+    </body>
+    
+</html>
